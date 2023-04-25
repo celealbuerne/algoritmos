@@ -1,17 +1,15 @@
-min=0
-max=3
 def contrauser(): 
-	while min<max:
-		contra="123"
-		user="123"
-		contra_= input ("ingrese contraseña ")
-		user_= input ("ingrese usuario ")
-		if contra == contra_ and user == user_:
-			print("bienvenido")
-			break
-		else:
+	min=0
+	max=3
+	c="123"
+	u="123"
+	contra=input("ingrese contraseña: ")
+	user=input("ingrese usuario ")
+	while contra != c or user == u:
+		for i in range (3):
 			print("incorrecto")
-			min=min+1
+			print("le quedan ",i, "intentos")
+
            
 
 def menuprincipal():
