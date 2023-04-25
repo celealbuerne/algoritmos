@@ -5,7 +5,7 @@ def contrauser():
 	u="123"
 	contra=input("ingrese contraseña: ")
 	user=input("ingrese usuario ")
-	while contra != c or user == u:
+	while contra != c or user != u:
 		for i in range (3):
 			print("incorrecto")
 			print("le quedan ",i, "intentos")
