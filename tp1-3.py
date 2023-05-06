@@ -107,7 +107,7 @@ def opcioncrear():
 	print("[2] No")
 
 def rubros():
-	print("Indique a que tipo de rubro pertenece el local.")
+	print("Indique a qué tipo de rubro pertenece el local.")
 	print("[a] Indumentaria")
 	print("[b] Perfumería")
 	print("[c] comida")
@@ -117,9 +117,9 @@ def crearlocal():
 	global com, per, ind
 	opcion3=str(input("Elija una opcion:"))
 	while opcion3!="1" and opcion3!="2":
-		print("Opcion invalida. Vuelva a intentarlo.")
+		print("Opción inválida. Vuelva a intentarlo.")
 		opcioncrear()
-		opcion3=str(input("Elija una opcion:"))
+		opcion3=str(input("Elija una opción:"))
 	while opcion3=="1":
 		nombrelocal=input("Ingrese el Nombre del local: ")
 		ubilocal=input("Ingrese la Ubicación de local: ")
@@ -128,7 +128,7 @@ def crearlocal():
 		while opcion4<"a" or opcion4>"c":
 			print("Datos incorrectos. Vuelva a intentarlo.")
 			rubros()
-			opcion4= str(input("Elija el tipo de rubro y escriba exactamente de la misma forma en la que esta escrito arriba: "))
+			opcion4= str(input("Elija el tipo de rubro e ingrese la letra del rubro a la que pertenece el local: "))
 		if opcion4=="c":
 			com=com+1
 		elif opcion4=="b":
@@ -164,7 +164,7 @@ def crearlocal():
 		volvermenu()
 
 def volvermenu():
-	print("Va a volver al menú principal")
+	print("Va a volver al menú principal.")
 	inicio()
 	
 valido()
