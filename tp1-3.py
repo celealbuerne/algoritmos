@@ -87,7 +87,7 @@ def gestionlocal():
 	Gestionlocalopciones()
 	opcion2=str(input("Ingrese el número de la sección a la que quiera ingresar: "))
 	while opcion2<"1" or opcion2>"4":
-		print("Opción invalida. Vuelva a intentarlo")
+		print("Opción inválida. Vuelva a intentarlo")
 		Gestionlocalopciones()
 		opcion2=str(input("Ingrese un número de acuerdo a la opción que quiera seleccionar."))
 	if opcion2=="1":
@@ -103,19 +103,19 @@ def gestionlocal():
 
 def opcioncrear():
 	print("Quiere crear un local?")
-	print("[1] Si")
+	print("[1] Sí")
 	print("[2] No")
 
 def rubros():
-	print("Indique a qué tipo de rubro pertenece el local.")
+	print("Indique a que tipo de rubro pertenece el local.")
 	print("[a] Indumentaria")
 	print("[b] Perfumería")
-	print("[c] comida")
+	print("[c] Comida")
 
 def crearlocal():
 	opcioncrear()
 	global com, per, ind
-	opcion3=str(input("Elija una opcion:"))
+	opcion3=str(input("Elija una opción:"))
 	while opcion3!="1" and opcion3!="2":
 		print("Opción inválida. Vuelva a intentarlo.")
 		opcioncrear()
@@ -164,10 +164,7 @@ def crearlocal():
 		volvermenu()
 
 def volvermenu():
-	print("Va a volver al menú principal.")
+	print("Va a volver al menú principal")
 	inicio()
 	
 valido()
-
-
-
