@@ -125,7 +125,7 @@ def crearlocal():
 		opcioncrear()
 		opcion3=str(input("Elija una opción:"))
 		while opcion3!="1" and opcion3!="2":
-			print("Opcion invalida. Vuelva a intentarlo.")
+			print("Opción invalida. Vuelva a intentarlo.")
 			opcioncrear()
 			opcion3=str(input("Elija una opción:"))
 	if opcion3=="2":
@@ -147,32 +147,29 @@ def localA():
 	elif opcion4=="b":
 		per=per+1
 	else:
-		opcion4=="a"
 		ind=ind+1
 
 def localB():
 	global com, per, ind
-	if ((com>per) and (per>ind)):
-		print("El rubro que mas locales tiene es el de Comida con ",com,"locales.")
+	if (com>per) and (com>ind):
+		print("El rubro que más locales tiene es el de Comida con ",com,"locales.")
+		if (per>ind):
+			print("El rubro que menos locales tiene es el de Indumenatria con", ind, "locales.")
+		else:
+			print("El rubro que menos locales tiene es el de Perfumería con ", per, "locales.")
+	elif (per>com) and (per>ind):
+		print("El rubro que más locales tiene es el de Perfumería con ",per,"locales.")
 		print("El rubro que menos locales tiene es el de Indumenatria con ", ind, "locales.")
-	elif ((com>ind) and (ind>per)):
-		print("El rubro que mas locales tiene es el de Comida con ",com,"locales.")
-		print("El rubro que menos locales tiene es el de Perfumeria con ", per, "locales.")
-	elif ((per>com) and (com>ind)):
-		print("El rubro que mas locales tiene es el de Perfumeria con ",per,"locales.")
-		print("El rubro que menos locales tiene es el de Indumenatria con ", ind, "locales.")
-	elif ((per>ind) and (ind>com)):
-		print("El rubro que mas locales tiene es el de Perfumeria con ",per,"locales.")
-		print("El rubro que menos locales tiene es el de Comida con ", com, "locales.")
-	elif ((ind>com) and (com>per)):
-		print("El rubro que mas locales tiene es el de Indumenatria con ",ind,"locales.")
-		print("El rubro que menos locales tiene es el de Perfumeria con ", per, "locales.")
-	else:
-		print("El rubro que mas locales tiene es el de Indumenatria con ",ind,"locales.")
-		print("El rubro que menos locales tiene es el de Comida con ", com,"locales.")
-
-
-
+		if (com>ind):
+			print("El rubro que menos locales tiene es el de Indumenatria con ", ind, "locales.")
+		else:
+			print("El rubro que menos locales tiene es el de Comida con ", com, "localesss.")
+	elif (ind>per) and (ind>com):
+		print("El rubro que más locales tiene es el de Perfumería con ",per,"locales.")
+		if (per>com):
+			print("El rubro que menos locales tiene es el de Comida con ", com, "localesss.")
+		else:
+			print("El rubro que menos locales tiene es el de Perfumeríaa con ", per, "locales.")
 
 def volvermenu():
 	print("Va a volver al menú principal")
