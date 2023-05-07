@@ -164,11 +164,11 @@ def localB():
 		else:
 			print("El rubro que menos locales tiene es el de Comida con ", com, "localesss.")
 	elif (ind>per) and (ind>com):
-		print("El rubro que más locales tiene es el de Perfumería con ",per,"locales.")
+		print("El rubro que más locales tiene es el de Indumentaria con ",ind,"locales.")
 		if (per>com):
 			print("El rubro que menos locales tiene es el de Comida con ", com, "localesss.")
 		else:
-			print("El rubro que menos locales tiene es el de Perfumeríaa con ", per, "locales.")
+			print("El rubro que menos locales tiene es el de Perfumería con ", per, "locales.")
 
 def volvermenu():
 	print("Va a volver al menú principal")
