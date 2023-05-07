@@ -94,9 +94,6 @@ def gestionlocal():
 		crearlocal()
 	elif opcion2=="4":
 		inicio()
-	elif opcion2=="2":
-		construccion()
-		volvermenu()
 	else:
 		construccion()
 		volvermenu()
