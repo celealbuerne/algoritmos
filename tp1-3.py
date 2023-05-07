@@ -6,8 +6,8 @@ com=0
 def valido():
 	maxim=3
 	global contador
-	c=str("123")
-	u=str("123")
+	c=str("12345")
+	u=str("admin@shopping.com")
 	while contador < 3:
 		import getpass
 		user=input("Ingrese su usuario: ")
