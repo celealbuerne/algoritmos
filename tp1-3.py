@@ -3,7 +3,7 @@ per=0
 ind=0
 com=0
 
-def valido():
+def principal():
 	maxim=3
 	global contador
 	c=str("12345")
@@ -14,7 +14,6 @@ def valido():
 		password = getpass.getpass("Ingrese su contraseña: ")  
 		if password==c and user == u:
 			print("Bienvenido")
-			contador= 5
 			inicio()
 		else: 
 			print("Datos incorrectos")
