@@ -169,5 +169,4 @@ def localB():
 def volvermenu():
 	print("Va a volver al menú principal")
 	inicio()
-	
-valido()
+principal()
